@@ -1,0 +1,253 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset=utf-8>
+<title>个人简历</title>
+<link rel="stylesheet" href="css/style.css">  <!-- 首页样式 -->
+<link rel="stylesheet" href="css/lunbo.css"> <!-- 轮播图 -->
+<link rel="stylesheet" href="css/yuanquan.css"> <!-- 开始动画 -->
+<link rel="stylesheet" href="css/quanpingqiehuan.css"> <!-- 全屏滚动切换 -->
+<link rel="stylesheet" href="css/boxs.css"><!-- 第二页盒子 -->
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript"> 
+// 第二页盒子
+$(document).ready(function(){
+	$('.holder').hover(function(){
+		$(this).removeClass('.notactive');	
+		$('.notactive').stop().animate({'width':'290px'},400); 
+		$(this).find('img').stop().animate({'top':'-165px'},400); 
+		$(this).stop().animate({'width':'380px'},400); 
+		$(this).find('span').css({'background-color':'#000'}); 
+		$(this).find('.text').fadeIn(300); 
+	},function(){
+		$('.notactive').stop().animate({'width':'320px'},400); 
+		$(this).addClass('.notactive');	
+		$(this).find('.text').hide();
+		$(this).find('img').stop().animate({'top':'0px'},500); 
+		$(this).stop().animate({'width':'320px'},400);
+		$(this).find('span').css({'background-color':'#333', 'color':'#dedede'}); 
+	});
+ });      //导航菜单
+	   $(document).ready(function () {
+            $(".button").click(function () {
+                $(".menu").slideToggle();
+            });
+        });
+	   //下滑键
+	  $(document).ready(function() {
+		
+		      $("#owl-demo").owlCarousel({
+		        items : 1,
+		        lazyLoad : true,
+		        autoPlay : true,
+		        navigation : true,
+			    navigationText : ["",""],
+			    rewindNav :true,
+			    scrollPerPage :true,
+			    pagination : true,
+    			paginationNumbers: false,
+		      });
+		
+		    });
+</script>
+</head>
+<body >
+<!-- 背景图轮播 -->
+<div class="preloader">
+	<div class="sk-spinner sk-spinner-wordpress">
+       <span class="sk-inner-circle"></span>
+     </div>
+</div>
+<div id="fullpage">
+
+
+	<!--固定导航-->
+	<div class="menu">
+	<div class="nav-logo">
+		<span></span>
+		<h2>Web 前 端 开 发</h2></div>
+	<ul class="menu-nav">
+	
+		<Li data-menuanchor="page1" class="active"><a href="#page1">关于我</a></Li>
+		<Li data-menuanchor="page2"><a href="#page2">我的技能</a></Li>
+		<Li data-menuanchor="page3"><a href="#page3">自我评价</a></Li>
+		<Li data-menuanchor="page4"><a href="#page4">我的作品</a></Li>
+		<Li data-menuanchor="page5"><a href="#page5">联系我</a></Li>
+	</ul>
+</div>
+
+	<!--第一个页面-->
+	<div class="section">
+	<span class="button"></span>
+	<div class="photo"></div>
+	<div class="demo-one">
+	
+		<p id="daziji"></p>
+	</div>
+	<p class="make">MAKE YOURSELF BETTER <br><br>
+	 JUST DO IT</p>
+   <div class="down"><a href="#page2"><span></span></a></div>
+	</div>
+	<!--第二个页面-->
+	<div class="section"id="section">
+	<div class="title">
+		<h3 class="h3"> 我的技能</h3>
+		<p>在学校学得都是理论知识，没有什么经验，还是自学的。但我有一定自学能力，只要给我一个机会
+		<br>相信凭借我对前端的热爱和努力，一定会做出自己成绩，实现自己的理想。</p>
+	</div>
+	<div class="main">
+	<div class="holder notactive">
+		<img class="image" src="images/apic14523.jpg" />
+		<span>HTML/CSS</span>
+		<div class="text">理解W3C标准、掌握HTML,CSS,能编写符合W3c标准，兼容主流浏览器及优雅可维护代码。熟悉HTML5,CSS3，能配合UI设计图切页面。熟练使用PS工具。
+         
+		</div>
+	</div>
+	<div class="holder notactive">
+		<img class="image" src="images/apic15507.jpg"/>
+		<span>JavaScript</span>
+		<div class="text">掌握JS,深入钻研《javascript高级程序设计》中;能用原生JS编写一些小demo。熟悉jQuery，实现web端界面效果，交互和功能及性能优化。
+		</div>
+	</div>
+	<div class="holder notactive">
+		<img class="image" src="images/apic8016.jpg"/>
+		<span>Other</span>
+		<div class="text">学习能力较强，敢于接受挑战和承受工作压力，有较强沟通能力和团队合作精神。能够一天24小时写代码不觉得无聊。</div>
+	</div>
+</div>
+	</div> 
+	<!--第三个页面-->
+	<div class="section">
+	<div class="title h33">
+		<h3 class="h3 ">自我评价</h3>
+		<p>坚持到无能为力，拼搏到感动自己</p>
+	</div>
+		<div class="wrap">
+			<div id="owl-demo" class="owl-carousel">
+				<div class="item" >
+					<div class="carousel">
+						<div class="group_1_img">
+							<img src="images/miao1.jpg" alt="">
+							<div class="clear"> </div>
+						</div>
+						<div class="group_1_text">
+					
+							<p>本人热情随和，激情四射，不安于现状。具有进取精神和团队精神。<br>有较强的动手能力和解决问题能力,良好协调沟通能力，适应力强，反应快、积极、灵活，爱创新,乐于挑战，喜欢接受新事物！</p>
+						</div>
+						<div class="clear"> </div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="carousel">
+						<div class="group_1_img">
+						<img src="images/miao2.jpg" alt="">
+							
+							<div class="clear"> </div>
+						</div>
+						<div class="group_1_text">
+						
+							<p>自学能力强，善于思考，吃苦耐劳，热爱运动。但人非完人，<br>自己在某些方面还是有一定的不足，比如知识，社会经验等;不过我相信这些都是可以通过自己努力的学习来提高的，我也正朝着这个方向努力！</p>
+						</div>
+						<div class="clear"> </div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="carousel">
+						<div class="group_1_img ">
+							<img src="images/miao3.jpg" alt="">
+							<div class="clear"> </div>
+						</div>
+						<div class="group_1_text">
+							
+							<p>我还有一些其他特长;<br>钢琴，跳舞，会作曲，摄影，热爱表演，我还有C1驾驶证，学技术的同时其实我也是个多才多艺的二逼青年。</p>
+						</div>
+						<div class="clear"> </div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+	
+	<div class="section">
+	<div class="title">
+	<h3 class="h3">我的作品</h3>
+	<p>正在努力建设....</p>
+	</div>
+<div class="demo">
+
+	<div class="box">
+		<div class="he_border1">
+			<img class="he_border1_img" src="images/pro_1.jpg" alt="Image 01">
+			<div class="he_border1_caption">
+				<h3 class="he_border1_caption_h">我的项目</h3>
+				<p class="he_border1_caption_p">基于Web校园招聘系统</p>
+				<a class="he_border1_caption_a" href="#"></a>
+			</div>
+		</div>
+	</div>
+	
+	<div class="box">
+		<div class="he_border2">
+			<img class="he_border2_img" src="images/pro_2.jpg" alt="Image 01">
+			<div class="he_border2_caption">
+				<h3 class="he_border2_caption_h">我的demo</h3>
+				<p class="he_border2_caption_p">切页面</p>
+				<a class="he_border2_caption_a" href="切页面/my home/index.html"></a>
+			</div>
+		</div>
+	</div>
+	
+	<div class="box">
+		<div class="he_3DFlipX">
+			<div class="he_3DFlipX_inner">
+				<div class="he_3DFlipX_img">
+					<img src="images/pro_3.jpg" alt="img01">
+				</div>
+				<div class="he_3DFlipX_caption">
+					<h3>我的demo</h3>
+					<p>正在建设中...</p>
+				</div>
+				<a href="#"></a>
+			 </div>
+		</div>
+	</div>
+	
+	<div class="box">
+		<div class="he_slideAllDown">
+			<img class="he_slideAllDown_img" src="images/pro_1.jpg" alt="Image 01">
+			<div class="he_slideAllDown_caption">
+				<h3 class="he_slideAllDown_caption_h">我的demo</h3>
+				<p class="he_slideAllDown_caption_p">正在建设中...</p>
+				<a class="he_slideAllDown_caption_a" href="#"></a>
+			</div>
+		</div>
+	</div>
+	
+	<div class="clear"></div>
+	
+</div>
+	</div>
+	<div class="section">
+	<h1>联系我</h1>
+	<hr><br>
+	<h2>手机:15840820382</h2>
+	<br>
+	<h2>每一小步   都是新高度</h2>
+
+</div>
+</div>
+
+<!-- 背景图轮播  -->
+<script src="js/jquery.backstretch.min.js"></script>
+<script src="js/custom.js"></script>
+<!-- 全屏切换代码  -->
+<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+<script type="text/javascript" src="js/quanping.js"></script>
+<!-- 打字机特效 -->
+<script type="text/javascript" src="js/script.js"></script>
+<!-- 轮播图 -->
+<script src="js/owl.carousel.min.js"></script> 
+</body>
+</html>
